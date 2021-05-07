@@ -1,4 +1,4 @@
-name: simple kubectl
+name: kosko
 
 on:
   workflow_dispatch:

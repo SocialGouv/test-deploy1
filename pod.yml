@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: rss-site
+  namespace: sample-next-app
   labels:
     app: web
 spec:

@@ -11,7 +11,7 @@ jobs:
       - run: |
           cd kosko
           yarn
-          yarn -s kosko generate --env prod > manifests.yml
+          yarn -s kosko generate --env prod > ../manifests.yml
       - uses: danielr1996/kubectl-action@1.0.0
         name: Deploy
         with:

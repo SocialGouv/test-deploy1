@@ -16,4 +16,4 @@ jobs:
         name: Deploy
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: apply -f manifests.yml --namespace test-gh1
+          args: apply -f manifests.yml --namespace sample-next-app

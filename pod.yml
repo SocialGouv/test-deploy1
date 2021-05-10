@@ -4,7 +4,7 @@ metadata:
   name: rss-site
   namespace: sample-next-app
   annotations:
-    "janitor/ttl": "1min"
+    "janitor/ttl": "1m"
   labels:
     app: web
 spec:

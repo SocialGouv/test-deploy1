@@ -3,6 +3,8 @@ kind: Pod
 metadata:
   name: rss-site
   namespace: sample-next-app
+  annotations:
+    "janitor/ttl": "1min"
   labels:
     app: web
 spec:

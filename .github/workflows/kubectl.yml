@@ -9,7 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: danielr1996/kubectl-action@1.0.0
-        name: Deploy
+        name: Create namespace
+        with:
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+          args: apply -f namespace.yml --namespace sample-next-app-test2
+      - uses: danielr1996/kubectl-action@1.0.0
+        name: Deploy Pod
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
           args: apply -f pod.yml --namespace sample-next-app-test2

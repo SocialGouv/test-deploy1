@@ -4,6 +4,7 @@ kind: Namespace
 metadata:
   annotations:
     field.cattle.io/projectId: c-bd7z2:p-7ms8p
-    field.cattle.io/creatorId: u-jpgzp
+  labels:
+    field.cattle.io/projectId: p-7ms8p
   name: sample-next-app-test3
   

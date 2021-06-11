@@ -14,6 +14,7 @@ metadata:
   namespace: sample-next-app-test2
   annotations:
     "janitor/ttl": "1m"
+    field.cattle.io/projectId: c-bd7z2:p-7ms8p
   labels:
     app: web
 spec:

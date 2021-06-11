@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: rss-site
-  namespace: sample-next-app
+  namespace: sample-next-app-test
   annotations:
     "janitor/ttl": "1m"
   labels:

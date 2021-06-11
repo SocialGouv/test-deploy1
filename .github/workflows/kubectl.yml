@@ -9,16 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: danielr1996/kubectl-action@1.0.0
-        name: Create NS
-        with:
-          kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: create ns sample-next-app-test
-      - uses: danielr1996/kubectl-action@1.0.0
-        name: Annotate NS
-        with:
-          kubeconfig: ${{ secrets.KUBE_CONFIG }} 
-          args: annotate ns sample-next-app-test field.cattle.io/projectId="c-bd7z2:p-7ms8p"
-      - uses: danielr1996/kubectl-action@1.0.0
         name: Deploy
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}

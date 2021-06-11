@@ -12,4 +12,4 @@ jobs:
         name: Deploy
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: apply -f pod.yml --namespace sample-next-app-test
+          args: apply -f pod.yml --namespace sample-next-app-test2

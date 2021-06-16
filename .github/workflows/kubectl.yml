@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: danielr1996/kubectl-action@1.0.0
+        continue-on-error: true
         name: Create namespace
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}

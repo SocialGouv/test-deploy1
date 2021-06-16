@@ -17,4 +17,4 @@ jobs:
         name: Deploy Pod
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: apply -f pod.yml --namespace sample-next-app-test5
+          args: apply -f pod.yml --namespace sample-next-app-test6

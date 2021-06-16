@@ -12,9 +12,9 @@ jobs:
         name: Create namespace
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: apply -f namespace.yml --namespace sample-next-app-test4
+          args: apply -f namespace.yml --namespace sample-next-app-test5
       - uses: danielr1996/kubectl-action@1.0.0
         name: Deploy Pod
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: apply -f pod.yml --namespace sample-next-app-test4
+          args: apply -f pod.yml --namespace sample-next-app-test5

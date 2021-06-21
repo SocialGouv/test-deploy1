@@ -4,5 +4,5 @@ kind: Namespace
 metadata:
   annotations:
     field.cattle.io/projectId: c-gjtkk:p-94v9x
-  name: sample-next-app-test6
+  name: sample-next-app-test10
   
